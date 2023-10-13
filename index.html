@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenido a Mi_jugueteria</title>
+    <!-- Enlazar Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Estilos personalizados -->
+    <style>
+      /* Fondo y color de texto para el encabezado y el pie de página */
+      header,
+      footer {
+        background-color: #f0a500;
+        color: white;
+      }
+      /* Cambiar el color del enlace del menú */
+      .navbar-light .navbar-nav .nav-link {
+        color: #333;
+      }
+      .navbar-light .navbar-toggler-icon {
+        background-color: #333;
+      }
+      /* Estilos para las tarjetas */
+      .card {
+        border: 2px solid #f0a500;
+        margin-bottom: 20px;
+      }
+      /* Cambiar el color del botón */
+      .btn-primary {
+        background-color: #f0a500;
+        border-color: #f0a500;
+      }
+      .btn-primary:hover {
+        background-color: #ffcc00;
+        border-color: #ffcc00;
+      }
+      /* Fondo de la página */
+      body {
+        background-color: aquamarine;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header class="bg-dark text-light text-center py-3">
+      <h1 class="fs-3">Bienvenido a Mi Juguetería</h1>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container my-2">
+      <p>
+        En Mi Juguetería, nos enorgullece ofrecer una amplia selección de
+        juguetes para niños de todas las edades. Nuestros productos son de alta
+        calidad y seguros, diseñados para brindar diversión y aprendizaje.
+        ¡Explora nuestra tienda en línea y encuentra el juguete perfecto para tu
+        hijo!
+      </p>
+    </main>
+    <main class="container">
+      <h1 class="text-center">Mis Juguetes</h1>
+      <div class="row">
+        <!-- Tarjeta 1 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+            <img
+              src="Spiderman.jpg"
+              class="card-img-top"
+              alt="Spiderman"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Spiderman</h5>
+              <p class="card-text">
+                El juguete de Spiderman es una figura de acción inspirada en el
+                popular superhéroe del universo Marvel. Esta figura está
+                diseñada con plástico muy resistente, lo que la hace duradera y
+                adecuada para el juego activo.
+              </p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modalCompra1"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+            <img
+              src="hulk.jpg"
+              class="card-img-top"
+              alt="Increíble Hulk"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Increíble Hulk</h5>
+              <p class="card-text">
+                El juguete del Increíble Hulk es una figura de acción que
+                representa al famoso superhéroe verde con una increíble fuerza.
+                Al igual que el de Spiderman, este juguete está hecho de
+                plástico resistente para soportar el juego activo.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modalCompra2"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+            <img src="iroman.jpg" class="card-img-top" alt="Ironman" />
+            <div class="card-body">
+              <h5 class="card-title">Ironman</h5>
+              <p class="card-text">
+                El juguete de Ironman es una figura de acción basada en el
+                icónico superhéroe tecnológico de Marvel. Al igual que los otros
+                dos, está fabricado con plástico resistente de alta calidad. De
+                alto realismo funcional. Lo acompañan varios accesorios.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modalCompra3"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Modales -->
+    <!-- Modal 1 -->
+    <div
+      class="modal fade"
+      id="modalCompra1"
+      tabindex="-1"
+      aria-labelledby="modalCompra1Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalCompra1Label">
+              Realizar Compra
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img
+                src="spiderman.jpg"
+                class="img-fluid w-75 mb-3"
+                alt="Spiderman"
+              />
+            </div>
+            <br />
+            ¿Está seguro de que desea comprar a Spiderman?
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-dismiss="modal"
+              onclick="mostrarMensajeCompra('Spiderman')"
+            >
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div
+      class="modal fade"
+      id="modalCompra2"
+      tabindex="-1"
+      aria-labelledby="modalCompra2Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalCompra2Label">
+              Realizar Compra
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img
+                src="hulk.jpg"
+                class="img-fluid w-75 mb-3"
+                alt="Increible Hulk"
+              />
+            </div>
+            <br />
+            ¿Está seguro de que desea comprar al Increíble Hulk?
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-dismiss="modal"
+              onclick="mostrarMensajeCompra('Increíble Hulk')"
+            >
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div
+      class="modal fade"
+      id="modalCompra3"
+      tabindex="-1"
+      aria-labelledby="modalCompra3Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalCompra3Label">
+              Realizar Compra
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img
+                src="iroman.jpg"
+                class="img-fluid w-75 mb-3"
+                alt="Ironman"
+              />
+            </div>
+            <br />
+            ¿Está seguro de que desea comprar al Ironman?
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-dismiss="modal"
+              onclick="mostrarMensajeCompra('Ironman')"
+            >
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Función para mostrar mensaje de compra -->
+    <script>
+      function mostrarMensajeCompra(juguete) {
+        alert(
+          "Gracias por comprar " +
+            juguete +
+            "!" +
+            ", usted recibirá un correo con los pasos a seguir."
+        );
+      }
+    </script>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-light text-center py-3">
+      <p>&copy; 2023 Mi Juguetería</p>
+    </footer>
+
+    <!-- Enlazar Bootstrap JS (opcional) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
